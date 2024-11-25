@@ -1,0 +1,49 @@
+﻿<Window x:Class="NearAsteroids.BrowseAsteroids"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NearAsteroids"
+        mc:Ignorable="d"
+        Title="BrowseAsteroids" Height="600" Width="487" Loaded="Window_Loaded_1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="Browse Asteroids" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontWeight="Bold" FontSize="30" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="Set Filters" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontWeight="Bold" FontSize="25"></TextBlock>
+
+        <TextBlock Grid.Row="3" Text="Hazardous?" VerticalAlignment="Top" FontFamily="Gilroy ☞" FontSize="18" Margin="173,24,172,0" Grid.ColumnSpan="2"/>
+        <CheckBox Grid.Row="3" Name="Hazardous" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="56,30,0,0" Grid.Column="1"/>
+
+        <Label  Name="ApplyBtn" Grid.Row="4" Grid.ColumnSpan="2" Background="#FF2C3DBF" Content="Apply" FontFamily="Gilroy ☞" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="20,5,20,5" Foreground="White" Margin="207,48,0,0" Grid.RowSpan="2" MouseDown="ApplyBtn_MouseDown"/>
+
+        <TextBlock Grid.Row="6" Grid.ColumnSpan="2" Text="Filtered Asteroids" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Gilroy ☞" FontWeight="Bold" FontSize="25" Margin="143,13,0,0"/>
+
+        <ScrollViewer Grid.Row="7" Grid.RowSpan="5" Grid.ColumnSpan="2" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="20,33,20,10">
+            <WrapPanel Name="BrowseAsteroidsWp"></WrapPanel>
+        </ScrollViewer>
+        <TextBlock HorizontalAlignment="Left" Margin="31,10,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontFamily="Gilroy ☞"/>
+        <TextBlock HorizontalAlignment="Left" Margin="219,10,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Hazardous" VerticalAlignment="Top" Grid.ColumnSpan="2" FontFamily="Gilroy ☞"/>
+        <TextBlock HorizontalAlignment="Left" Margin="112,10,0,0" Grid.Row="7" TextWrapping="Wrap" Text="Closest Approach" VerticalAlignment="Top" Grid.Column="1" FontFamily="Gilroy ☞" Width="111"/>
+
+
+    </Grid>
+</Window>

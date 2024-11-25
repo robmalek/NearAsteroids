@@ -1,0 +1,35 @@
+﻿<Window x:Class="NearAsteroids.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NearAsteroids"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    
+    
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Vítá tě aplikace" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontWeight="Bold" FontSize="40"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Near Asteroids" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Gilroy ☞" FontWeight="Bold" FontSize="30"></TextBlock>
+
+        <Label  Name="SearchByDateLbl" Grid.Row="2" Background="#FF2C3DBF" Content="Search by date range" FontFamily="Gilroy ☞" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="20,20,20,20" Foreground="White" MouseDown="SearchByDateLbl_MouseDown"/>
+        <Label  Name="SearchByNASAID" Grid.Row="3" Background="#FF2C3DBF" Content="Search specific asteroid by NASA ID" FontFamily="Gilroy ☞" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="20,20,20,20" Foreground="White" MouseDown="SearchByNASAID_MouseDown"/>
+        <Label  Name="BrowseLbl" Grid.Row="4" Background="#FF2C3DBF" Content="Browse Asteroids" FontFamily="Gilroy ☞" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="20,20,20,20" Foreground="White" MouseDown="BrowseLbl_MouseDown"/>
+
+
+    </Grid>
+</Window>

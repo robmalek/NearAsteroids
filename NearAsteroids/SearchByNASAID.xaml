@@ -1,0 +1,40 @@
+﻿<Window x:Class="NearAsteroids.SearchByNASAID"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NearAsteroids"
+        mc:Ignorable="d"
+        Title="SearchByNASAID" Height="709" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Search specific asteroid by NASA ID" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontWeight="Bold" FontSize="30" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+
+        <TextBox Grid.ColumnSpan="2" Name="NasaSearchBar" Text="" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="0,10,0,0" />
+        <Label  Name="ConfirmBtn" Grid.Row="1" Grid.ColumnSpan="2" Background="#FF2C3DBF" Content="Confirm" FontFamily="Gilroy ☞" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="20,5,20,5" Foreground="White" Margin="0,0,0,10" MouseDown="ConfirmBtn_MouseDown"/>
+
+        <TextBlock Name="NasaID" Grid.Row="2" Grid.ColumnSpan="2" Text="NASA ID" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontSize="18" FontWeight="Bold"/>
+        <TextBlock Name="AsteroidName" Grid.Row="2" Grid.ColumnSpan="2" Text="Name" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontSize="18" FontWeight="Bold" Margin="0,60,0,0"/>
+        <TextBlock Name="Designation" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="Designation" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontSize="18" FontWeight="Bold" Margin="0,20,0,0"/>
+        <TextBlock Name="Magnitude" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Text="Absolute Magnitude" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontSize="18" FontWeight="Bold" Margin="0,80,0,0"/>
+        <TextBlock Name="Diameter" Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="2" Text="Estimated Diameter" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontSize="18" FontWeight="Bold" Margin="0,50,0,0"/>
+        <TextBlock Name="Hazardous" Grid.Row="2" Grid.RowSpan="4" Grid.ColumnSpan="2" Text="Hazardous" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Gilroy ☞" FontSize="18" FontWeight="Bold" Margin="0,10,0,0"/>
+
+
+    </Grid>
+</Window>
